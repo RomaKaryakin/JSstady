@@ -57,8 +57,7 @@ function datectPersonalLevel(){
 
 function writeYourGenres(){
     for(let i = 1; i <= 3; i++){
-       const genres =  prompt(`What number of your favorite genre? ${i}`, '');
-       personalMoviesDB.genres[i - 1] = genres;
+       personalMoviesDB.genres[i - 1] = prompt(`What number of your favorite genre? ${i}`, '');
     }
 }
 
