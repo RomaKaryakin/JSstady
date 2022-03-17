@@ -16,6 +16,7 @@ const option = {
 option.makeTest();
 
 const {border, bg} = option.colors;
+console.log(border);
 // console.log(option.name);
 
 // delete option.name;
