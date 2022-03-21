@@ -119,3 +119,36 @@ function log(a, b, c){
 const mun = [2, 6, 7];
 
 console.log(log(...mun));
+
+const array = ['a', 'b'];
+const arrayCopy = [...array];
+
+console.log(arrayCopy);
+
+let str = "Test String";
+let copyStr = new String(str);
+
+console.log(str);
+console.log(copyStr);
+
+console.log(typeof(str));
+console.log(typeof(copyStr));
+
+const soldier= {
+    health: 400,
+    power: 100,
+    vois: function(){
+        console.log('Hello');
+    }
+};
+
+const jhon = {
+    health: 100
+};
+
+// jhon.__proto__ = soldier;
+Object.setPrototypeOf(jhon, soldier);
+
+console.log(jhon.power);
+// console.log(jhon.vois);
+jhon.vois();
